@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.firstbox{
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    background-color: beige;
+}
+.thirdbox{
+    padding: 100px;
+    border: 2px solid brown;
+    background-color: pink;
+}
+.box4th{
+    padding: 100px;
+    margin: 100px;
+    border: 2px solid black;
+    background-color: yellow;
+}
+.box5th {
+    width: 200px;
+    height: 200px;
+    padding: 100px;
+    margin: 100px;
+    border: 2px solid rgb(81, 21, 220);
+    background-color: rgb(13, 230, 96);
+}

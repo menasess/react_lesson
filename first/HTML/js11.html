@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>숙박 예약</h3>
+    <hr>
+    <ol>입실날짜의  초기값은 오늘 날짜 출력</ol>
+    <ol>숙박일수를 선택하면 퇴실 날짜가 자동으로 계산과 출력</ol>
+    <form action="success.html">
+        <label for="night">숙박일수</label>
+        <select name="night" id="night">
+            <option value="0">선택</option>
+            <option value="1">1박</option>
+            <option value="2">2박</option>
+            <option value="3">3박</option>
+            <option value="4">4박</option>
+        </select><br>
+        <label for="enterDate">입실날짜 :</label>
+        <input type="date" name="enterDate" id="enterDate"><br>
+        <label for="outDate">퇴실날짜 :</label>
+        <input type="date" name="outDate" id="outDate"><br>
+        <button>예약</button>
+        <button type="button">자바스크립 함수 실행</button>
+    </form>
+    <button onclick="nnan()">dd</button>
+    <script src="../JS/js11.js"></script>
+</body>
+</html>

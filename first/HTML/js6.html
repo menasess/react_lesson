@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <h2>J 태그 요소의 속성값을 변경할 수 있습니다.</h2>
+    <h5 id="status" style="padding-left: 40px;"> </h5>
+    <!-- img 태그로 그림을 화면에 표시합니다. 그림파일의 url 은 src 속성값으로 설정합니다. -->
+     <div>
+        <img src="../img/pic_bulboff.gif" alt="" id="bulb">
+        <button onclick="bulbOn()" id="on">켜주세요.</button>
+        <button onclick="bulbOff()" id="off">꺼주세요.</button>
+     </div>
+     <div>
+        
+        <button onclick="toggleOnOff()" id="toggle">ON or OFF</button>
+        
+     </div>
+    <script>
+        const bulb = document.getElementById('bulb')
+        const status = document.getElementById('status')
+        //버튼 비활성화 동작
+        //document.getElementById('off').disabled = true
+        const on = document.getElementById('on')
+        const off = document.getElementById('off')
+        off.disabled = true
+        function toggleOnOff(){
+            if(status.innerHTML==="off"){
+                bulbOn()
+            } else{
+                bulbOff()
+            }
+        }
+
+        function bulbOn() {
+            bulb.src = "../IMG/KakaoTalk_20241211_133406018.gif"
+            // 요소의 disable 속성을 설정
+            on.disabled = true      //비활성화
+            off.disabled = false 
+            status.innerHTML = "on";
+            status.style.color = "red";
+              
+        }
+        function bulbOff() {
+            bulb.src = "../IMG/KakaoTalk_20241211_133406232.gif"
+            off.disabled = true
+            on.disabled = false
+            status.innerHTML = "off";
+            status.style.color = "green";
+        }
+        
+
+    </script>
+</body>
+
+</html>

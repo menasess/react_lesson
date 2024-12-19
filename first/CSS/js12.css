@@ -1,0 +1,63 @@
+
+/* 기본적인 스타일링 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  
+  #ball {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #ball li {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 20%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #ball li:hover {
+    background-color: #ebebeb;
+    transform: scale(1.1);
+  }
+  
+  #ball li span {
+    display: block;
+    font-size: 30px;
+    color: #f4f4f4;
+  }
+  
+  /* 이벤트 전파 처리 */
+  #ball li span {
+    display: block;
+    font-size: 50px;
+    color: #edeaea;
+    cursor: pointer;
+  }
+  
+  /* 클릭 시 스타일 */
+  #ball li.clicked {
+    background-color: #f40707;
+    color: rgb(250, 0, 0);
+  }
+  p{
+    font-size: 35px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  

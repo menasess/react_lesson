@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', 'Noto Sans KR';
+    color: #222;
+    user-select: none;
+    letter-spacing: -0.2px;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.sub-wrap{
+    width: 100%;
+    background-color: #04152b;
+}
+.sub-wrap .sub-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    height: 36px;
+    margin:0 auto;
+    width: 1280px;
+}
+.sub-wrap .sub-con .site-tab {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.sub-wrap .sub-con .site-tab li {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.sub-wrap .sub-con .user-tab{
+    display: flex;
+    align-items: center;
+}
+.sub-wrap .sub-con .user-tab > li{
+    color: #fff;
+    padding: 0 10px;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+}
+.sub-wrap .sub-con .user-tab > li + li::before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.nav-wrap {
+    background-color: #28264d;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-con img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.gnb-wrap {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.gnb-wrap li {
+    margin: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.gnb-wrap li:hover {
+    color: #007bff;
+}
+
+.gnb-ico {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.gnb-ico li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.ic-search {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.ic-search:hover {
+    color: #007bff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-con {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .gnb-wrap {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .gnb-wrap li {
+        margin: 5px 0;
+    }
+
+    .gnb-ico {
+        margin-top: 10px;
+    }
+}
+.img {
+    width: 200px;
+    height: 200px;
+    background-size: cover; /* 이미지가 div 크기에 맞게 조정됩니다 */
+    background-position: center; /* 이미지가 div 중앙에 배치됩니다 */
+  }
+ 

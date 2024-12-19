@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/jack5.css">
+</head>
+<body>
+    <div id="header">
+    <div class="desktop-only">
+        <div class="sub-wrap">
+            <div class="sub-con">
+                <ul class="site-tab">
+                    <li onclick="window.open('https://www.ncdinos.com/')">홈페이지</li>
+                    <li onclick="window.open('https://www.ncdinospodshop.com/')">POD샵</li>
+
+                </ul>
+                <ul class="user-tab">
+                        <li onclick="login()" ><form action="jack1.html">
+                            <input type="submit" >
+                         </form>로그인</li>
+                        <li onclick="join()"><form action="jack2.html">
+                            <input type="submit" >
+                         </form>회원가입</li>
+                        
+                         
+                </ul>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav-con">
+                <img src="../IMG/img-header-emblem@2x.png" alt="" onclick="movePage('/')" style="cursor: pointer;">
+                <ul class="gnb-wrap">
+                    <li onclick="movePage('/product/list/UN')">유니폼</li>
+                    <li onclick="movePage('/product/list/HA')">모자</li>
+                    <li onclick="movePage('/product/list/CL')">의류</li>
+                    <li onclick="movePage('/product/list/G')">팬상품</li>
+                </ul>
+                <ul class="gnb-ico">
+                    <li onclick="toggleSearchLayout()"><i class="ic-search"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<ul id="left-menu" class="folding">
+    <li class="">
+        <span>유니폼</span>
+        <ul>
+            <li onclick="movePage('/product/list/UN/A')" class="">어센틱 유니폼</li>
+            <li onclick="movePage('/product/list/UN/C')" class="">클러치 유니폼</li>
+            <li onclick="movePage('/product/list/UN/R')" class="">레플리카 유니폼</li>
+            <li onclick="movePage('/product/list/UN/M')" class="">기념 유니폼</li>
+            <li onclick="movePage('/product/list/MA/M')" class="">유니폼 패치</li>
+
+        </ul>
+    </li>
+    <li class="">
+        <span>모자</span>
+        <ul>
+            <li onclick="movePage('/product/list/HA/A')" class="">어센틱 모자</li>
+            <li onclick="movePage('/product/list/HA/C')" class="">클러치 모자</li>
+            <li onclick="movePage('/product/list/HA/F')" class="">패션 모자</li>
+
+        </ul>
+    </li>
+    <li class="">
+        <span>의류</span>
+        <ul>
+            <li onclick="movePage('/product/list/CL/A')" class="">어센틱 의류</li>
+            <li onclick="movePage('/product/list/CL/C')" class="">클러치 의류</li>
+            <li onclick="movePage('/product/list/CL/F')" class="">패션 의류</li>
+        </ul>
+    </li>
+    <li class="active">
+        <span>팬상품</span>
+        <ul>
+            <li onclick="movePage('/product/list/G/CH')" class="">응원용품</li>
+            <li onclick="movePage('/product/list/G/BA')" class="">야구용품</li>
+            <li onclick="movePage('/product/list/G/HO')" class="">홈&amp;오피스</li>
+            <li onclick="movePage('/product/list/G/ET')" class="">기타</li>
+        </ul>
+    </li>
+</ul>
+<li>
+    <div class="img" style="background-image: url(../IMG/1.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/2.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/3.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/4.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/5.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/6.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/7.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/8.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/9.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+<li>
+    <div class="img" style="background-image: url(../IMG/10.jpg);">
+   </div>
+   <!-- 상품명,가격 -->
+    <div class="desc">
+      <h6>레시 키링</h6>
+      <div class="price">16,000
+        <span class="won">원</span>
+      </div>
+      <div class="label=wrap">
+        <span class="label blue">신상품</span>
+        <span class="label gray">품절</span>
+      </div>
+    </div>
+</li>
+
+</body>
+</html>

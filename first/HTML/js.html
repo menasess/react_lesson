@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 작성된 웹컨텐츠에 대해 동적인 기능으로 
+     컨텐츠를 조작할 수 있습니다. 특정한 요소를 자바스크립트는 태그 안의 
+     작성합니다. 태그는 안에 있어야 하지만 어디에나 포함될수 있다. head, body
+     위치 상관 없이 작성될수 있다. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js start</title>
+
+</head>
+<body>
+<!--     
+    <script> 
+    //인자없고 리턴값 없음.
+     function myMembers(){
+        document.write("Hello-😂🙌🤞✌<br>");
+     }
+     document.write("함수호출하기1<br>");
+     myMembers();
+     document.write("함수호출하기2<br>");
+     myMembers();
+
+ //인자있음 리턴값 없음.
+     function myMembers1(count){
+        document.write("Hello-😂🙌🤞✌<br>"+count+"<br>");
+     }
+     document.write("함수호출하기1<br>");
+     myMembers1(12);
+     document.write("함수호출하기2<br>");
+     myMembers1("Parametor : "+"hello✌");
+    </script> -->
+
+    <script>
+        // function Example( img,  cont){
+        //     for( i=0; i<img; i++){
+        //         document.write(cont+" <br>");
+        //     }
+            
+        // }
+        // document.write("First ^^ <br>");
+        // Example(3,'%');
+
+        // document.write(" <br>Second ^^ <br>");
+        // Example(4,"🤞❤");
+        function Example1(name,item,count){
+            document.write(`<h5>${name} 님 환영합니다.</h5>`);
+            for(i=0; i<count;i++){
+                document.write(item);
+            }
+        }
+        // document.write(i)
+        document.write("함수 호출 1 : "+"<br>");
+        Example1("jack","❤",3);
+        document.write("<br>","함수 호출 2 : "+"<br>");
+        Example1("jack","❤",4);
+        document.write("<br>","----------------------------------------")
+    </script>
+    
+    <script>
+       function Example(a,b){
+
+        return a+b;
+       }
+       let result = Example(10,45);
+       document.write("<br>",result);
+       document.write("<br>","----------------------------------");
+
+       num = Number(prompt("입력"));
+       num1 = Number(prompt("입력"));
+       document.write("<br>",`${(num)}+${(num1)} : ${Example(Number(num+num1))}`);
+
+    </script>
+    
+</body>
+</html>
+ <!-- // 자바스크립트 함수는 정의 방식도 약 2가지 있다.
+ //-기본 개념 : 코드의 재사용(reuse). 특정 기능이 다른 곳(파일, 같은 파일
+    다른 위치 에서도 사용된는 경우 다시 작성하지 않고 블러서(call)사용한다.)
+ //-기본 형식: 함수 이름 (변수명 작성 동일), 인자, 리턴값 이 있다.
+    데이터 입력은 - 인자로 ==>함수 이름{명령어}==>출력은 실행한 결과값(리턴값)
+    (함수 실행에 필요한 값)   (함수실행 결과값)
+    function 함수이름(인자1,인자2,인자3){
+        명령어1;
+        명령어2;
+        retur 결과값;
+    } 
+// 기본 형식에 따른 함수 유형: 인자, 리터값(결과 값) 유무에 따라
+   1. 인자 없고 결과 값 없음
+   2. 인자 있고 리턴값 결과 없음
+   3. 인자 없고 리턴값 있음
+   4. 인자도 있고 리턴값 있음
+
+   리턴값이 있으면 반드시 return명령으로 결과값 전달.
+   예시 : toUpperCase() 변수 문자열을 대문자로 변환 -->

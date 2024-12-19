@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 { 
+            background-color: blueviolet;
+            margin-top: 50%;
+            margin-left: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute; /* position 속성 추가 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="up()">UP</button>
+        <button onclick="down()">DOWN</button>
+        <button onclick="left()">LEFT</button>
+        <button onclick="right()">RIGHT</button>
+    </div>
+    <div>
+        <button onclick="moveUp()">MOVEUP</button>
+        <button onclick="moveDown()">MOVEDOWN</button>
+        <button onclick="moveLeft()">MOVELEFT</button>
+        <button onclick="moveRight()">MOVERIGHT</button>
+    </div>
+    <h1 id="box"></h1> <!-- ID가 'box'로 설정된 h1 요소 -->
+    <script>
+        let topPos = 50;    
+        let leftPos = 50;  
+        let boxHeight = 100; 
+        let boxWidth = 100;  
+
+        const box = document.getElementById("box");  <!-- 수정된 부분 -->
+
+        function up() {
+            boxHeight += 100;
+            box.style.height = boxHeight + "px";
+        }
+
+        function down() {
+            if (boxHeight > 50) {
+                boxHeight -= 100; 
+                box.style.height = boxHeight + "px";
+            }
+        }
+
+        function left() {
+            if (boxWidth > 100) {
+                boxWidth -= 100; 
+                box.style.width = boxWidth + "px";
+            }
+        }
+
+        function right() {
+            boxWidth += 100; 
+            box.style.width = boxWidth + "px";
+        }
+
+        function moveUp() {
+            topPos -= 10; 
+            box.style.top = topPos + "%";
+        }
+
+        function moveDown() {
+            topPos += 10; 
+            box.style.top = topPos + "%";
+        }
+
+        function moveLeft() {
+            leftPos -= 10; 
+            box.style.left = leftPos + "%";
+        }
+
+        function moveRight() {
+            leftPos += 10;
+            box.style.left = leftPos + "%";
+        }
+    </script>
+</body>
+</html>

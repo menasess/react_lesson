@@ -30,7 +30,7 @@ function Say(props) {
     return (
         <div>
             <button onClick={handleEnter}>입장</button>
-            <button onClick={() => handleOut(message + 1)}>퇴장</button>  
+            <button onClick={() => handleOut(message )}>퇴장</button>  
 
             <h3 style={{ color: color }}>{message}{props.name}</h3>
 

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../IMG/1920-asphalt-road-landscape-with-rocks-sunny-sky-with-clouds-and-beautiful-mountain-road-with-a-perfect-asphalt-at-sunrise-in-summer-vintage-toning-travel-background-highway-in-generative-ai.jpg);
+    background-size: auto;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.menu {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}

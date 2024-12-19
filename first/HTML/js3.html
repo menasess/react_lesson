@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const users = [];
+        // for(let i = 0; i < 4; i++){
+        //     let result = prompt (" 입력하세요 : ");
+        //     users.push(result.toUpperCase());
+        // }
+        // for(let i=0; i<users.length; i++){
+        //     if(!/^[A-Za-z]+$/.test(users[i])){
+        //         document.write("글자로만 입력하세요^^")
+        //     } else{
+        //         document.write(i+":"+users[i],"<br>");
+        //     } 
+        // }
+        let na = 0;
+        for(let i=0; i<200; i+=30){
+            document.write("na : "+i+"<br>");
+        }
+    </script>
+</body>
+</html>
+// 변수 : 데이터 입출력은 데이터 메모리에 저장(입력)하고 가져(출력)
+//       오는 작업을 위해서 데이터 접근에 사용하는 이름. 메모리를 데이터 저장위치를 '주소
+//       로 ' 야용하지만 프로그래밍 언어에서는 주소를 활용하기 어렵다. 
+//       그래서 변수를 사용합니다.
+//자바  스크립트 변수 : 변수 선언이 필수가 아닙니다. 선언은 컴파일(브라우저)
+         에게 변수의 형식과 이름을 미리 알려주는것. 자바스크립트는 형식은 알려주지
+         않고 이름만 알려줍니다.
+// 변수 선언 키워드 : var, let, const, 등이 있다.^^
+// 변수 scope(사용범위): 전역(global) 변수, 지역(local)변수
+//       스콥(scope) 설정은 {}(블록, for,if,함수)을 합니다.{}안에 선언된 
+         변수는 지역 변수입니다.
+//       let,const 로 선언해야만 지역 변수 스콥을 설정할 수 있습니다.
+         let, const 선언 없이 사용된 변수는 자바스크립트에서는 전역 변수로 취급한다
+         var 로 선언하면 지역 변수 스콥 설정 못합니다.
+//const 선언 : 변수값을 변경할 수 없다(상수)
+         배열, HTML 요소 등 객체 선언할 떄 사용합니다. 배열 또는 객체에 사용할
+         때 배열 요소나 객체 프로퍼티는 변경 할수 있고 배열 또는 객체 자체를 
+         바꿀 수 없음.(8_배열.html 41줄 부터 참고 하세요.)         
+// 변수 라이프사이클 (생명주기) : 태어난다.(생성)-활동한다. -소멸한ㄷ.
+         메모리를 필요로하는 데이터가 프로그램 실행하는 동안 꼭 필요하다.=>전역
+         프로그램 실행 중 특정{}에서만 사용된다.=>지역변수. {}이 끝나면 소멸
+                  
+                           
